@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hype Roleplay Games</title>
+  
+  <!-- Fonte e Ícones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      background-color: #0f0f0f;
+      color: white;
+      text-align: center;
+    }
+
+    /* Topo */
+    header {
+      background: linear-gradient(180deg, #004d00, #0f0f0f);
+      padding: 40px 10px;
+    }
+
+    header img {
+      max-width: 220px;
+      height: auto;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 1.1rem;
+      color: #ddd;
+      margin-bottom: 20px;
+    }
+
+    /* Botões */
+    .btn {
+      display: inline-block;
+      padding: 12px 25px;
+      border-radius: 8px;
+      margin: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn-green {
+      background-color: #27ae60;
+      color: white;
+    }
+
+    .btn-green:hover {
+      background-color: #2ecc71;
+    }
+
+    .btn-gray {
+      background-color: #333;
+      color: white;
+    }
+
+    .btn-gray:hover {
+      background-color: #555;
+    }
+
+    /* Seção */
+    .section {
+      padding: 40px 15px;
+    }
+
+    .section h2 {
+      font-size: 1.6rem;
+      margin-bottom: 10px;
+    }
+
+    .section p {
+      max-width: 600px;
+      margin: auto;
+      margin-bottom: 20px;
+      font-size: 1rem;
+      color: #bbb;
+    }
+
+    /* Accordion */
+    .accordion {
+      background-color: #1a1a1a;
+      color: white;
+      cursor: pointer;
+      padding: 15px;
+      width: 100%;
+      max-width: 400px;
+      margin: 8px auto;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 1rem;
+      font-weight: bold;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition: background-color 0.3s;
+    }
+
+    .accordion:hover {
+      background-color: #2b2b2b;
+    }
+
+    .panel {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease, padding 0.3s ease;
+      background-color: #111;
+      border-radius: 0 0 8px 8px;
+      max-width: 400px;
+      margin: auto;
+      text-align: left;
+      color: #ccc;
+      font-size: 0.9rem;
+      padding: 0 15px;
+    }
+
+    .panel.open {
+      padding: 10px 15px;
+    }
+
+    .accordion i {
+      color: #2ecc71;
+      margin-right: 8px;
+    }
+
+    /* Rodapé */
+    footer {
+      background-color: #111;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+
+    footer a {
+      color: #aaa;
+      text-decoration: none;
+    }
+
+    /* Redes sociais */
+    .social-icons a {
+      display: inline-block;
+      margin: 8px;
+      color: white;
+      font-size: 22px;
+      transition: 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: #2ecc71;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Topo -->
+  <header>
+    <img src="logo-hype.png" alt="Hype Roleplay">
+    <p>Jogo de simulação de vida real multiplayer disponível para Android e Desktop.</p>
+    <a href="https://play.google.com/store/apps/details?id=ru.unisamp_mobile.launcher" class="btn btn-green"><i class="fas fa-download"></i> DOWNLOAD</a>
+    <a href="https://hypesamp.com.br/" class="btn btn-gray"><i class="fas fa-coins"></i> COMPRAR COINS</a>
+  </header>
+
+  <!-- Informações -->
+  <section class="section">
+    <h2>INFORMAÇÕES EXTRAS DO JOGO</h2>
+    <p>O servidor se passa no Estado de San Andreas e todas as ações ocorrem nas 3 cidades: Los Santos, Las Venturas & San Fierro.</p>
+
+    <button class="accordion"><i class="fas fa-briefcase"></i> PROFISSÕES <span>+</span></button>
+    <div class="panel">
+      <p>Piloto de jato, Médico, Mecânico, Caminhoneiro</p>
+    </div>
+
+    <button class="accordion"><i class="fas fa-swimming-pool"></i> DICAS PRA INICIANTE <span>+</span></button>
+    <div class="panel">
+      <p>Ao chegar no servidor use <code>/loja</code> e resgate o CUPOM INICIAL para ganhar 25k, 6 dias de sócio e mais 2 dias depois de atingir 1h jogada.</p>
+    </div>
+
+    <button class="accordion"><i class="fas fa-home"></i> CASAS IN GAME <span>+</span></button>
+    <div class="panel">
+      <p>Casas simples e mansões disponíveis para compra.</p>
+    </div>
+
+    <button class="accordion"><i class="fas fa-car"></i> VEÍCULOS DISPONÍVEIS <span>+</span></button>
+    <div class="panel">
+      <p>Carros esportivos e motos.</p>
+    </div>
+
+    <button class="accordion"><i class="fas fa-users"></i> +33 ORGS/CORPS <span>+</span></button>
+    <div class="panel">
+      <p>Gangues, corporações policiais, máfias e grupos organizados.</p>
+    </div>
+
+    <a href="https://play.google.com/store/apps/details?id=ru.unisamp_mobile.launcher" class="btn btn-green">JOGAR AGORA</a>
+  </section>
+
+  <!-- Rodapé -->
+  <footer>
+    <p><a href="#">Termos de Serviço</a> | <a href="#">Política de Privacidade</a></p>
+    <div class="social-icons">
+      <a href="https://discord.gg/6TYm9zFP"><i class="fab fa-discord"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+      <a href="https://wa.me/5581994200429" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    </div>
+  </footer>
+
+  <!-- Script Accordion -->
+  <script>
+    const accordions = document.querySelectorAll(".accordion");
+    accordions.forEach(acc => {
+      acc.addEventListener("click", function() {
+        const panel = this.nextElementSibling;
+        const icon = this.querySelector("span");
+
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+          panel.classList.remove("open");
+          icon.textContent = "+";
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+          panel.classList.add("open");
+          icon.textContent = "-";
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
